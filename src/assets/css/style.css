@@ -245,7 +245,6 @@ a {
       position: fixed;
       top: 10px;
       left: 10px;
-      opacity: 100% !important;
       background: linear-gradient(to right, #0081ff 50%, #0045ff 100%);
     }
     .menu-items{
