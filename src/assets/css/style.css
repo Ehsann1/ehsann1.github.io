@@ -66,6 +66,7 @@ a {
 .menu-active {
   width: 25rem !important;
   border-radius: 2rem 2rem 2rem 2rem !important;
+  background: linear-gradient(to right, #0045ff 50%, #0081ff ) !important;
 }
 
 .menu-icon {
@@ -108,7 +109,7 @@ a {
 
 .menu {
   transition: all 0.7s !important;
-  background: linear-gradient(to right, #0081ff 50%, #0045ff 100%);
+  background: #0045ff 100% ;
   width: min-content;
   width: 60px;
   height: 60px;
@@ -245,13 +246,12 @@ a {
       position: fixed;
       top: 10px;
       left: 10px;
-      background: linear-gradient(to right, #0081ff 50%, #0045ff 100%);
     }
     .menu-items{
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      margin-left: -30px;
+      padding-left: 0 ;
     }
     .menu-active{
       left: 5px !important;
@@ -259,11 +259,24 @@ a {
       margin-left: auto !important;
       margin-right: auto !important;
       opacity: 1 !important;
-      width: max-content;
+      width: 95% !important;
+      padding:5px;
       text-align: center;
       box-shadow: 0px 40px 50px rgba(32, 29, 50, 1);
     }
   .main-title {
     margin-top: 2rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .menu-item-active, .menu-item {
+    margin: 0.3rem 0.2rem 0.2rem 0.2rem;
+    font-size: small;
+  }
+  .menu-items{
+    margin-left: -3rem !important;
+  }
+  .sidebar-box{
+    font-size: small;
   }
 }
