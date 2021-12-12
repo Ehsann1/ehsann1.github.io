@@ -109,7 +109,7 @@
 
 			//Scroll handler:
 			scrollScreen: function () {
-				if(screen.width > 1263){
+				if(window.innerWidth > 1263){
 					let card_right = document.getElementsByClassName('card-right')[0];
 					let avatar = document.getElementsByClassName('avatar')[0];
 					if (120 < window.scrollY && window.scrollY < document.body.scrollHeight - 400) {
