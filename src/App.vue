@@ -12,12 +12,12 @@
 					</div>
 
 					<div class="pt-5">
-						<a target="_blank" class="pa-3" href="https://www.linkedin.com/in/ehsan-norouzi-/">
+						<a target="_blank" class="pa-3 social-account" href="https://www.linkedin.com/in/ehsan-norouzi-/">
 							<v-icon large>
 								mdi-linkedin
 							</v-icon>
-      					</a>
-						<a target="_blank" class="pa-3" href="https://github.com/Ehsann1/">
+						</a>
+						<a target="_blank" class="pa-3 social-account" href="https://github.com/Ehsann1/">
 							<v-icon large>
 								mdi-github
 							</v-icon>
@@ -51,34 +51,42 @@
 						</div>
 					</div>
 
+					<div class="pa-5">
+						<v-btn rounded large download href="./Resume-Ehsan-Norouzi.pdf" outlined color="#4da6ff">دانلود رزومه من</v-btn>
+					</div>
 				</div>
 				<div class="card-main col-xl-7 col-lg-8 col-12">
 					<div class="menu-div">
-						<div class="menu">
+						<div class="menu" style="z-index:10;">
 							<div class="menu-icon" @click="menuActive()">
 								<div class="bar1"></div>
 								<div class="bar2"></div>
 								<div class="bar3"></div>
 							</div>
 							<div class="menu-items d-none">
-								<router-link :to="{ name : 'About'}" :class="$route.name=='About'?'menu-item-active ':'menu-item'">
+								<router-link :to="{ name : 'About'}"
+									:class="$route.name=='About'?'menu-item-active ':'menu-item'">
 									درباره من</router-link>
-								<router-link :to="{ name : 'Resume'}" :class="$route.name=='Resume'?'menu-item-active ':'menu-item'">
+								<router-link :to="{ name : 'Resume'}"
+									:class="$route.name=='Resume'?'menu-item-active ':'menu-item'">
 									رزومه</router-link>
-								<router-link :to="{ name : 'Contact'}" :class="$route.name=='Contact'?'menu-item-active ':'menu-item'">
+								<router-link :to="{ name : 'Contact'}"
+									:class="$route.name=='Contact'?'menu-item-active ':'menu-item'">
 									ارتباط با من</router-link>
 								<router-link :to="{ name : 'Portfolio'}"
-									:class="$route.name=='Portfolio'?'menu-item-active ':'menu-item'">نمونه کار ها</router-link>
+									:class="$route.name=='Portfolio'?'menu-item-active ':'menu-item'">
+									نمونه کار ها</router-link>
 							</div>
 						</div>
 					</div>
 					<v-container>
 						<h1 class="main-title" v-if="$route.name == 'About'">درباره من</h1>
 						<h1 class="main-title" v-else-if="$route.name == 'Resume'">رزومه</h1>
-						<h1 class="main-title" v-else>ارتباط با من</h1>
+						<h1 class="main-title" v-else-if="$route.name == 'Contact'">ارتباط با من</h1>
+						<h1 class="main-title" v-else>نمونه کار ها</h1>
 						<div class="main-text pt-5">
 							<router-view />
-      </div>
+						</div>
 					</v-container>
 				</div>
 			</div>
@@ -109,7 +117,7 @@
 
 			//Scroll handler:
 			scrollScreen: function () {
-				if(window.innerWidth > 1263){
+				if (window.innerWidth > 1263) {
 					let card_right = document.getElementsByClassName('card-right')[0];
 					let avatar = document.getElementsByClassName('avatar')[0];
 					if (120 < window.scrollY && window.scrollY < document.body.scrollHeight - 400) {
@@ -126,7 +134,7 @@
 						card_right.style.position = "relative";
 					}
 				}
-    
+
 			},
 			// menue Click manager:
 			menuActive: function () {

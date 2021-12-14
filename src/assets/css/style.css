@@ -141,7 +141,11 @@ a {
   text-align: justify;
 }
 
-.v-icon:hover {
+.social-account i{
+  transition: 0.8s all !important;
+}
+
+.social-account i:hover {
   color: #0D86FF !important;
 }
 
@@ -149,7 +153,52 @@ a {
   text-align: right;
 }
 
+.about-box{
+  background-color: #2C283A;
+  padding: 20px;
+  border-radius: 15px;
+}
 
+.resume-skill-box{
+  background-color: #2C283A;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.skill-progress-background{
+  padding-top: 5px;
+  background-color: rgba(48, 44, 64,1);
+  width: 100%;
+  height: 30px;
+  padding-left: 15px;
+  border-radius: 2em !important;
+  font-weight: bold;
+}
+.skill-progress{
+  padding-top: 5px;
+  background-color: #0D86FF;
+  height: 30px;
+  border-radius: 2em !important;
+  margin-top: -30px;
+  padding-right: 2em;
+  font-style: italic;
+}
+
+.skill{
+  padding-top: 2em;
+}
+
+.about-box-title{
+  font-size: 1.8em;
+  margin-top: 0.6em;
+}
+.about-box-body{
+  padding: 1em;
+}
+
+.about-boxs{
+  grid-gap: 20px;
+}
 
 .skill-text:hover {
   background-color: #3a344c;
