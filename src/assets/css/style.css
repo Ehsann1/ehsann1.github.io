@@ -36,7 +36,6 @@ body {
 .menu-item-active {
   margin: 1.3rem 0.5rem 0.5rem 0.5rem;
   color: #FFFF !important;
-  text-shadow: 2px 3px rgba(48, 44, 64, 0.5);
   transition: all 0.5s;
 }
 .menu-item-active::before {
@@ -48,7 +47,7 @@ body {
   margin-top: -5px;
 }
 .menu-item {
-  margin: 1.3rem 0.5rem 0.5rem 0.5rem;
+  margin: 2rem 0.5rem 0.5rem 0.5rem;
   color: #b6dbff !important;
   transition: all 0.5s;
 }
@@ -61,6 +60,7 @@ a {
   display: flex;
   padding-left: 4rem;
   position: absolute;
+  margin-top: -15px;
 }
 
 .menu-active {
@@ -155,7 +155,6 @@ a {
 
 .about-box{
   background-color: #2C283A;
-  padding: 20px;
   border-radius: 15px;
 }
 
@@ -194,10 +193,6 @@ a {
 }
 .about-box-body{
   padding: 1em;
-}
-
-.about-boxs{
-  grid-gap: 20px;
 }
 
 .skill-text:hover {
@@ -275,9 +270,11 @@ a {
 @media only screen and (max-width: 600px) {
   .menu-item {
     font-size: 12px;
-    margin: 1.3rem 0.4rem 0.4rem 0.4rem;
+    margin: 2.3rem 0.4rem 0.4rem 0.4rem;
   }
-
+  .menu-items{
+    margin-top: -20px;
+  }
   .menu-item-active {
     font-weight: 400 !important;
   }
@@ -311,7 +308,6 @@ a {
       width: 95% !important;
       padding:5px;
       text-align: center;
-      box-shadow: 0px 40px 50px rgba(32, 29, 50, 1);
     }
   .main-title {
     margin-top: 2rem;
