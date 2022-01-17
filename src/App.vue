@@ -3,7 +3,7 @@
 		<v-container class="mt-10P text-center">
 			<div class="main row container">
 				<div class="card-right col-xl-2 col-lg-3 col-12 col-sm-6 col-md-5">
-					<img class="avatar" src="https://hmachinery.ir/media/1_q2EM9J33m0IHqisZWXiWtQ.jpg">
+					<img class="avatar" src="./assets/images/Profile_Picture.jpg">
 					<p class="title-name">
 						احسان نوروزی
 					</p>
