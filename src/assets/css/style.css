@@ -1,7 +1,10 @@
 @import url('https://v1.fontapi.ir/css/Sahel');
 
 * {
-  font-family: Sahel;
+  font-family: Sahel !important;
+}
+.sahel-font{
+  font-family: Sahel !important;
 }
 :root {
   scrollbar-color: #01bbbe #2f2b3f;
@@ -66,7 +69,7 @@ a {
 .menu-active {
   width: 25rem !important;
   border-radius: 2rem 2rem 2rem 2rem !important;
-  background: linear-gradient(to right, #0045ff 50%, #0081ff ) !important;
+  background: #0045ff !important
 }
 
 .menu-icon {
@@ -106,7 +109,6 @@ a {
   direction: ltr;
   display: flex;
 }
-
 .menu {
   transition: all 0.7s !important;
   background: #0045ff 100% ;
@@ -142,12 +144,9 @@ a {
 }
 
 .social-account i{
-  transition: 0.8s all !important;
-}
-
-.social-account i:hover {
   color: #0D86FF !important;
 }
+
 
 .sidebar-box {
   text-align: right;

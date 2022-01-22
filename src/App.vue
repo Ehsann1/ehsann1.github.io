@@ -29,7 +29,7 @@
 							<v-icon color="blue">
 								mdi-calendar-text
 							</v-icon>
-							2 تیر 1382
+							۱۳۸۲
 						</div>
 						<div class="py-2">
 							<v-icon color="blue">
@@ -57,25 +57,25 @@
 				</div>
 				<div class="card-main col-xl-7 col-lg-8 col-12">
 					<div class="menu-div">
-						<div class="menu" style="z-index:10;">
+						<div class="menu menu-active" style="z-index:10;">
 							<div class="menu-icon" @click="menuActive()">
 								<div class="bar1"></div>
 								<div class="bar2"></div>
 								<div class="bar3"></div>
 							</div>
-							<div class="menu-items d-none">
+							<div class="menu-items">
 								<router-link :to="{ name : 'About'}"
 									:class="$route.name=='About'?'menu-item-active ':'menu-item'">
 									درباره من</router-link>
 								<router-link :to="{ name : 'Resume'}"
 									:class="$route.name=='Resume'?'menu-item-active ':'menu-item'">
 									رزومه</router-link>
-								<router-link :to="{ name : 'Contact'}"
-									:class="$route.name=='Contact'?'menu-item-active ':'menu-item'">
-									ارتباط با من</router-link>
 								<router-link :to="{ name : 'Portfolio'}"
 									:class="$route.name=='Portfolio'?'menu-item-active ':'menu-item'">
 									نمونه کار ها</router-link>
+								<router-link :to="{ name : 'Contact'}"
+									:class="$route.name=='Contact'?'menu-item-active ':'menu-item'">
+									ارتباط با من</router-link>
 							</div>
 						</div>
 					</div>
