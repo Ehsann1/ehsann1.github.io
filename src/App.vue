@@ -3,7 +3,7 @@
 		<v-container class="mt-10P text-center">
 			<div class="main row container">
 				<div class="card-right col-xl-2 col-lg-3 col-12 col-sm-6 col-md-5">
-					<img class="avatar" src="./assets/images/Profile_Picture.jpg">
+					<img class="avatar" lazy-src="./assets/images/Lazy.jpg" src="./assets/images/Profile_Picture.jpg">
 					<p class="title-name">
 						احسان نوروزی
 					</p>
@@ -58,7 +58,7 @@
 				<div class="card-main col-xl-7 col-lg-8 col-12">
 					<div class="menu-div">
 						<div class="menu menu-active" style="z-index:10;">
-							<div class="menu-icon" @click="menuActive()">
+							<div class="menu-icon change" @click="menuActive()">
 								<div class="bar1"></div>
 								<div class="bar2"></div>
 								<div class="bar3"></div>

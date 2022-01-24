@@ -61,12 +61,13 @@
         form.append('email', this.form.email);
         form.append('message', this.form.msg);
 
-        axios.post('https://ehsan.hmachinery.ir/api/', form)
+        axios.post(this.BACKEND_DOMAIN + '/api/contact/', form)
           .then(response => {
             this.card.loading = false;
             this.card.disabled = false;
 
             if (response.data.Response == "Ok") {
+              this.form={  name: '',  email: '',  msg: ''};
               this.alert = {
                 show: true,
                 type: "success"

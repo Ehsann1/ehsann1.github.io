@@ -158,9 +158,9 @@ a {
 }
 
 .resume-skill-box{
-  background-color: #2C283A;
-  padding: 20px;
-  border-radius: 15px;
+  background-color: #2C283A !important;
+  padding: 20px !important;
+  border-radius: 15px !important;
 }
 
 .skill-progress-background{
@@ -259,14 +259,20 @@ a {
   margin-top: 10em;
 }
 
-.v-application--wrap {
-  background-image: url('~@/assets/images/triangles-top.svg'), url('~@/assets/images/triangles-bottom.svg');
-  background-position: left top, right bottom;
-  background-repeat: no-repeat;
-  background-size: inherit;
+@media only screen and (min-width: 600px) {
+  .v-application--wrap {
+    background-image: url('~@/assets/images/triangles-top.svg'), url('~@/assets/images/triangles-bottom.svg');
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: inherit;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
+  .menu{
+    opacity: 0.4;
+  }
   .menu-item {
     font-size: 12px;
     margin: 2.3rem 0.4rem 0.4rem 0.4rem;
