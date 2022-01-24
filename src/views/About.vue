@@ -14,7 +14,7 @@
           <div class="about-box pa-2 row">
           <v-icon large color="#0D86FF" style="font-size:5em;">mdi-pencil-ruler</v-icon>
           <div class="about-box-title mr-5 ">
-            طراحی وب سایت
+            طراحی وبسایت
           </div>
           </div>
           <!-- <div class="about-box-body">1</div> -->
@@ -24,7 +24,7 @@
           <v-icon large color="#0D86FF" style="font-size:5em;">mdi-web</v-icon>
 
           <div class="about-box-title mr-5 ">
-            توسعه وب سایت
+            توسعه وبسایت
           </div>
           </div>
           <!-- <div class="about-box-body">1</div> -->

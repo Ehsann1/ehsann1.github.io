@@ -63,7 +63,7 @@
 								<div class="bar2"></div>
 								<div class="bar3"></div>
 							</div>
-							<div class="menu-items">
+							<div class="menu-items" @click="gotomain()">
 								<router-link :to="{ name : 'About'}"
 									:class="$route.name=='About'?'menu-item-active ':'menu-item'">
 									درباره من</router-link>
@@ -85,7 +85,7 @@
 						<h1 class="main-title" v-else-if="$route.name == 'Contact'">ارتباط با من</h1>
 						<h1 class="main-title" v-else>نمونه کار ها</h1>
 						<div class="main-text pt-5">
-							<router-view />
+							<router-view id="main"/>
 						</div>
 					</v-container>
 				</div>
@@ -114,7 +114,12 @@
 			window.removeEventListener("scroll", this.scrollScreen);
 		},
 		methods: {
-
+			gotomain:function(){
+				let thisis = this;
+				setTimeout(function(){
+					thisis.$vuetify.goTo("#main");
+				},100)
+			},
 			//Scroll handler:
 			scrollScreen: function () {
 				if (screen.width > 1263) {

@@ -283,6 +283,9 @@ a {
   .menu-item-active {
     font-weight: 400 !important;
   }
+  .skill-progress-background{
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 1903px) {
