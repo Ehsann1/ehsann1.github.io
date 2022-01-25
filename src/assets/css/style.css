@@ -24,7 +24,12 @@ body {
   background-color: #262232;
   color: white;
 }
-
+.text-blue{
+  color: #8ab4f8;
+}
+.pointer{
+  cursor: pointer;
+}
 .Box {
   margin-top: 2rem;
   width: 50%;
@@ -69,7 +74,7 @@ a {
 .menu-active {
   width: 25rem !important;
   border-radius: 2rem 2rem 2rem 2rem !important;
-  background: #0045ff !important
+  background:linear-gradient(60deg, rgba(20,251,243,1) 0%, #0045ff 70%) !important;
 }
 
 .menu-icon {
