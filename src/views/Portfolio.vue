@@ -6,7 +6,7 @@
                 <v-card elevation="0" dark class="mx-auto my-12 rounded-lg" max-width="340" height="500">
 
                     <v-img class="project-img" @click="showProject(p.name)" lazy-src="../assets/images/Lazy.jpg" height="250"
-                        v-bind:src="p.imgurl"></v-img>
+                        :src="p.imgurl"></v-img>
 
                     <v-card-title @click="showProject(p.name)">{{p.name}}</v-card-title>
 
@@ -59,7 +59,7 @@
                                     show-arrows-on-hover height="suto" dark>
                                     <v-carousel-item v-for="(image, i) in projectCard.images" :key="i">
                                         <v-img class="rounded ma-5" lazy-src="../assets/images/Lazy.jpg"
-                                            max-height="100%" max-width="100%" :src="BACKEND_DOMAIN+image"></v-img>
+                                            max-height="100%" max-width="100%" :src="image"></v-img>
                                     </v-carousel-item>
                                 </v-carousel>
                                 <div v-else style="width:100%" class="text-center pa-5">
@@ -70,7 +70,7 @@
                                 <h2 class="mt-5 text-center">
                                     درباره این پروژه
                                 </h2>
-                                <p class="justify-start mt-5" style="text-align: justify;" v-html="projectCard.des"></p>
+                                <p class="justify-start mt-5 ml-5" style="text-align: justify;" v-html="projectCard.des"></p>
                                 <v-divider v-if="projectCard.employer_opinion.full_name" class="mx-4"></v-divider>
                                 <div v-if="projectCard.employer_opinion.full_name" class="container pa-5 mr-5">
                                     <h3>نظر کارفرما</h3>
@@ -131,10 +131,35 @@
             projectDetailCard: false,
             projectCard: null,
 
-            projects: null,
+            projects: [
+                  {
+                    name :'صدنگار',
+                    employer_opinion:{
+                        full_name : null,
+                        text :null,
+                    },
+                    imgurl :'./Projects/100Negar/1.png',
+                    images :['./Projects/100Negar/1.png', './Projects/100Negar/2.png', './Projects/100Negar/3.png', './Projects/100Negar/4.png'],
+                    link:'',
+                    des:'پروژه صدنگار سایتی تماما API بهمراه پنل مدیریت قدرتمند.<br/>تکنولوژی های بکار رفته‌:<br/><div dir="ltr">BackEnd :  Python - Django - Django REst Framework<br/> FrontEnd : Vue Cli - Vuetify</div>',
+                    rating:4
+                },
+                {
+                    name :'هگمتان قطعه',
+                    employer_opinion:{
+                        full_name : null,
+                        text :null,
+                    },
+                    imgurl :'./Projects/Hmachinery/1.jpeg',
+                    images :['./Projects/Hmachinery/1.jpeg'],
+                    link:'',
+                    des:'',
+                    rating:4
+                }
+            ],
         }),
         created() {
-            this.GetProjects();
+            // this.GetProjects();
         },
         methods: {
             showProject: function (project_name) {
