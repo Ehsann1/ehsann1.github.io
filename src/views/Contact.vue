@@ -9,7 +9,7 @@
     </v-container>
 
     <v-card dark elevation="0" shaped outlined :disabled="card.disabled" :loading="card.loading">
-      <v-card-title> فرم ارسال پیام </v-card-title>
+      <v-card-title> برای ارتباط با من میتوانید از فرم زیر استفاده کنید </v-card-title>
       <v-card-text>
         <v-row>
           <v-col cols="12" md="6" sm="6" lg="6" xl="6">

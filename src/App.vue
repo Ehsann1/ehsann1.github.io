@@ -39,20 +39,20 @@
 						</div>
 						<div class="py-2">
 							<v-icon color="blue">
-								mdi-email
-							</v-icon>
-							Norouzi8446@gmail.com
-						</div>
-						<div class="py-2">
-							<v-icon color="blue">
 								mdi-cellphone-dock
 							</v-icon>
 							09109558446
 						</div>
+						<div class="py-2">
+							<v-icon color="blue">
+								mdi-email
+							</v-icon>
+							<small>Ehsannorouzi@protonmail.com</small>
+						</div>
 					</div>
 
 					<div class="pa-5">
-						<v-btn rounded large download href="./Resume-Ehsan-Norouzi.pdf" outlined color="#4da6ff">دانلود رزومه من</v-btn>
+						<v-btn rounded large download href="./EhsanNorouzi-Resume.pdf" outlined color="#4da6ff">دانلود رزومه من</v-btn>
 					</div>
 				</div>
 				<div class="card-main col-xl-7 col-lg-8 col-12">

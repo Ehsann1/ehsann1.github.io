@@ -2,12 +2,15 @@
   <div>
     <div class="container">
       <p dir="ltr" class="py-5">
-       I love programming and I do it with interest. I mostly work as a freelancer. My specialty is web development and I use technologies like Django, Vue Js and so on.
+      I have been working for Python for 3 years.
+Before Python, I worked in C#, not professionally, just to gain experience. For about 2 years, I have been working with Django on projects that you can see below.I do programming with interest and I use every opportunity to gain my experience and growth.I am also familiar with working as a team and I can work well with the team.
       </p>
       <br>
       <br>
       <p class="py-5">
-من عاشق برنامه نویسی هستم و آن را با علاقه انجام می دهم. من بیشتر به عنوان فریلنسر کار می کنم. تخصص من توسعه وب است و از فناوری هایی مانند Django، Vue Js و ... استفاده می کنم.
+            من سه سال هست که با پایتون کار میکنم . قبل از پایتون برای آشنایی بیشتر با برنامه نویسی #C کار می کردم.
+            همچنین با زبان هایی مثل C , JavaScript و ++C و ... آشنایی دارم.
+            من با علاقه برنامه نویسی می کنم و از هر فرصتی برای کسب تجربه و رشد خود استفاده می کنم.
       </p>
       <div class="row about-boxs">
         <v-col cols="12" md="6" xl="6" lg="6" >
