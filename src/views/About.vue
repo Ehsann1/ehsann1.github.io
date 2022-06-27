@@ -2,8 +2,9 @@
   <div>
     <div class="container">
       <p dir="ltr" class="py-5">
-      I have been working for Python for 3 years.
-Before Python, I worked in C#, not professionally, just to gain experience. For about 2 years, I have been working with Django on projects that you can see below.I do programming with interest and I use every opportunity to gain my experience and growth.I am also familiar with working as a team and I can work well with the team.
+      I have over three years of experience in software industry with dominated history
+of working with python and django.
+I do programming with interest and I use every opportunity to gain my experience and growth.I am also familiar with working as a team and I can work well with the team.
       </p>
       <br>
       <br>
